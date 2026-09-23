@@ -1,0 +1,9 @@
+{
+  "event_id": "092108-020-sample-001",
+  "event_type": "DEFINITION_APPROVED",
+  "aggregate_type": "indicator_definition",
+  "aggregate_id": "health_plan_indicator_registry-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记健康规划指标口径库的首条领域记录"
+}
