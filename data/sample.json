@@ -2,8 +2,22 @@
   "event_id": "092108-020-sample-001",
   "event_type": "DEFINITION_APPROVED",
   "aggregate_type": "indicator_definition",
-  "aggregate_id": "health_plan_indicator_registry-001",
+  "aggregate_id": "ind-hypertension-control",
   "occurred_at": "2026-09-20T18:00:00+08:00",
   "version": 1,
-  "summary": "登记健康规划指标口径库的首条领域记录"
+  "summary": "高血压规范管理率口径 v1：分子=年末规范管理人数，分母=年末建档管理人数，适用全部建档慢病患者",
+  "payload": {
+    "definition_id": "ind-hypertension-control",
+    "definition_version": 1,
+    "predecessor_version": null,
+    "formula": "RATE_PER_100",
+    "numerator_source": "慢病随访台账（年度合格随访）",
+    "denominator_source": "居民电子健康档案（年末在管）",
+    "denominator_definition_version": "DEN-2021",
+    "applicable_population": "辖区内全部建档高血压患者",
+    "boundary_version": "geo-city:1",
+    "quality_rules": ["denominator_nonzero", "residual_within_5pct", "source_not_expired", "no_unresolved_conflict", "review_not_overdue"],
+    "change_note": "首次发布",
+    "effective_from": "2021-01-01T00:00:00+08:00"
+  }
 }

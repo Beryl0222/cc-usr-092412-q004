@@ -20,19 +20,45 @@
       "type": "string",
       "enum": [
         "DEFINITION_APPROVED",
+        "DEFINITION_DEPRECATED",
+        "GEOGRAPHY_BOUNDARY_APPROVED",
+        "CONVERSION_SCHEME_APPROVED",
+        "DATA_SOURCE_REGISTERED",
+        "DATA_SOURCE_RENEWED",
         "OBSERVATION_SUBMITTED",
+        "CONFLICT_RECORDED",
+        "CONFLICT_RESOLVED",
+        "JOB_REGISTERED",
+        "JOB_STEP_COMPLETED",
+        "JOB_COMPLETED",
+        "JOB_FAILED",
+        "CANDIDATE_SERIES_PROPOSED",
+        "CANDIDATE_SERIES_SUPERSEDED",
         "QUALITY_REVIEWED",
-        "TARGET_ASSIGNED",
-        "RELEASE_REVISED"
+        "QUALITY_CONFIRMED",
+        "USE_APPROVED",
+        "RELEASE_PROPOSED",
+        "RELEASE_FROZEN",
+        "RELEASE_REVISED",
+        "REPORT_REFERENCE_RECORDED",
+        "REPORT_REVISION_APPENDED",
+        "TARGET_ASSIGNED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "indicator_definition",
-        "regional_observation",
-        "target_commitment",
-        "publication_release"
+        "geography_boundary",
+        "conversion_scheme",
+        "data_source",
+        "observation_batch",
+        "conflict",
+        "candidate_series",
+        "computation_job",
+        "publication_release",
+        "report_reference",
+        "target_commitment"
       ]
     },
     "aggregate_id": {
@@ -50,6 +76,10 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object",
+      "description": "事件具体内容，结构由事件类型决定（见 src/domain.ts 与各领域服务）"
     }
   },
   "additionalProperties": true
