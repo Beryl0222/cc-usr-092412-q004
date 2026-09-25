@@ -1,0 +1,29 @@
+{
+  "event_id": "freeze:REL-2026-中期评审-001",
+  "event_type": "RELEASE_FROZEN",
+  "aggregate_type": "publication_release",
+  "aggregate_id": "REL-2026-中期评审-001",
+  "occurred_at": "2026-09-21T10:00:00+08:00",
+  "version": 1,
+  "summary": "冻结发布包 REL-2026-中期评审-001（HTN-MGMT，面向规划评审 PLAN-2026-中期评审）",
+  "payload": {
+    "release_id": "REL-2026-中期评审-001",
+    "indicator_id": "HTN-MGMT",
+    "review_id": "PLAN-2026-中期评审",
+    "periods": ["2021", "2022"],
+    "entries": [
+      {
+        "period": "2021",
+        "value": 80.43,
+        "definition_version": 1,
+        "boundary_basis": "区划2020",
+        "schemes_used": [],
+        "batch_ids": ["B-2021-东城", "B-2021-西城", "B-2021-南湖"],
+        "quality_flags": []
+      }
+    ],
+    "quality_review": { "reviewer": "统计负责人-王某", "reviewed_at": "2026-09-20T18:00:00+08:00" },
+    "usage_approval": { "approver": "业务负责人-赵某", "approved_at": "2026-09-20T19:00:00+08:00" },
+    "frozen_by": "平台主管-钱某"
+  }
+}

@@ -19,20 +19,34 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "DEFINITION_REGISTERED",
         "DEFINITION_APPROVED",
+        "CONVERSION_SCHEME_ADOPTED",
+        "CONVERSION_CONFLICT_QUEUED",
+        "CONVERSION_CONFLICT_RESOLVED",
+        "SOURCE_REGISTERED",
+        "SOURCE_EXPIRED",
         "OBSERVATION_SUBMITTED",
+        "COMPUTATION_JOB_STARTED",
+        "CANDIDATE_COMPUTED",
         "QUALITY_REVIEWED",
-        "TARGET_ASSIGNED",
-        "RELEASE_REVISED"
+        "USAGE_APPROVED",
+        "REVIEW_DEADLINE_PASSED",
+        "RELEASE_FROZEN",
+        "RELEASE_REVISED",
+        "TARGET_ASSIGNED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "indicator_definition",
+        "boundary_conversion",
+        "data_source",
         "regional_observation",
-        "target_commitment",
-        "publication_release"
+        "candidate_series",
+        "publication_release",
+        "target_commitment"
       ]
     },
     "aggregate_id": {
